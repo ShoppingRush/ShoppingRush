@@ -9,7 +9,6 @@ public class GenerateShelfes : MonoBehaviour
 
     public GameObject MilkPrefab;
 
-
     // Use this for initialization
     void Start()
     {

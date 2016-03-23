@@ -11,9 +11,10 @@ GameObject:
   - 33: {fileID: 3380644}
   - 23: {fileID: 2374752}
   - 65: {fileID: 6505206}
+  - 208: {fileID: 20864478}
   m_Layer: 0
   m_Name: Shelf
-  m_TagString: Untagged
+  m_TagString: Shelf
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
@@ -75,6 +76,21 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.8843858, y: 0.63751954, z: 2.1924448}
   m_Center: {x: 0.008503198, y: -0.028787456, z: 1.0962224}
+--- !u!208 &20864478
+NavMeshObstacle:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 144720}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.442, y: 0.319, z: 1.0960001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.009000001, y: -0.029000001, z: 1.0960001}
+  m_TimeToStationary: 0.5
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
