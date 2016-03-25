@@ -6,10 +6,76 @@ ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: shelf
+    100004: shelf_001
+    100006: shelf_002
+    100008: shelf_003
+    100010: shelf_004
+    100012: shelf_005
+    100014: shelf_006
+    100016: shelf_007
+    100018: shelf_008
+    100020: shelf_009
+    100022: shop
     400000: //RootNode
+    400002: shelf
+    400004: shelf_001
+    400006: shelf_002
+    400008: shelf_003
+    400010: shelf_004
+    400012: shelf_005
+    400014: shelf_006
+    400016: shelf_007
+    400018: shelf_008
+    400020: shelf_009
+    400022: shop
     2300000: //RootNode
+    2300002: shelf
+    2300004: shelf_001
+    2300006: shelf_002
+    2300008: shelf_003
+    2300010: shelf_004
+    2300012: shelf_005
+    2300014: shelf_006
+    2300016: shelf_007
+    2300018: shelf_008
+    2300020: shelf_009
+    2300022: shop
     3300000: //RootNode
+    3300002: shelf
+    3300004: shelf_001
+    3300006: shelf_002
+    3300008: shelf_003
+    3300010: shelf_004
+    3300012: shelf_005
+    3300014: shelf_006
+    3300016: shelf_007
+    3300018: shelf_008
+    3300020: shelf_009
+    3300022: shop
     4300000: Cube
+    4300002: shelf_009
+    4300004: shelf_008
+    4300006: shelf_007
+    4300008: shelf_006
+    4300010: shelf_005
+    4300012: shelf_004
+    4300014: shelf_003
+    4300016: shelf_002
+    4300018: shelf_001
+    4300020: shelf
+    4300022: shop
+    6400000: //RootNode
+    6400002: shelf
+    6400004: shelf_001
+    6400006: shelf_002
+    6400008: shelf_003
+    6400010: shelf_004
+    6400012: shelf_005
+    6400014: shelf_006
+    6400016: shelf_007
+    6400018: shelf_008
+    6400020: shelf_009
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -38,7 +104,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

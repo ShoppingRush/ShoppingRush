@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Player
   - Shelf
+  - Item
   layers:
   - Default
   - TransparentFX

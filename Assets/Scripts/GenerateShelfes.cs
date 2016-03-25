@@ -12,24 +12,23 @@ public class GenerateShelfes : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        // 100x100
         for (int z = -7; z < 7; z++)
         {
             for (int x = -9; x <= -2; x++)
             {
-                GameObject shelf = Instantiate(ShelfPrefab);
-                shelf.transform.position = new Vector3(3 * x, 0, 5 * z + 2.5f);
+                //GameObject shelf = Instantiate(ShelfPrefab);
+                //shelf.transform.position = new Vector3(3 * x, 0, 5 * z + 2.5f);
                 GameObject milk = Instantiate(MilkPrefab);
                 milk.transform.position = new Vector3(3 * x, 1.5f, 5 * z + 2.5f);
-                milk.transform.parent = shelf.transform;
+                //milk.transform.parent = shelf.transform;
             }
             for (int x = 2; x <= 9; x++)
             {
-                GameObject shelf = Instantiate(ShelfPrefab);
-                shelf.transform.position = new Vector3(3 * x, 0, 5 * z + 2.5f);
+                //GameObject shelf = Instantiate(ShelfPrefab);
+                //shelf.transform.position = new Vector3(3 * x, 0, 5 * z + 2.5f);
                 GameObject milk = Instantiate(MilkPrefab);
                 milk.transform.position = new Vector3(3 * x, 1.5f, 5 * z + 2.5f);
-                milk.transform.parent = shelf.transform;
+                //milk.transform.parent = shelf.transform;
             }
         }
     }
