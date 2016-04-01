@@ -41,7 +41,7 @@ namespace Assets.Scripts
 
         void OnGUI()
         {
-            if (_isPlayer && !GameObject.Find("PauseMenuGUI").GetComponent<PauseScript>().IsPaused)
+            if (_isPlayer && !GameObject.Find("PauseMenu").GetComponent<PauseMenu>().IsPaused)
             {
                 GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 10, 100, 20), "Press E to grab");
             }
