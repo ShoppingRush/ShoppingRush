@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using System;
@@ -9,7 +9,11 @@ namespace Assets.Scripts
     [RequireComponent(typeof(Inventory))]
     public class ShopItemList : MonoBehaviour
     {
-        private Dictionary<ShopItemData, int> _shopItemToCollect;
+        public float Margin = 8;
+
+        public Image ShopItemListPanel;
+
+        public GameObject TextPrefab;
 
         public Dictionary<ShopItemData, int> ShopItemToCollect {
             get
@@ -19,11 +23,11 @@ namespace Assets.Scripts
             set
             {
                 _shopItemToCollect = value;
-                RedrawUI();
+                RedrawUi();
             }
         }
 
-        public Text ShopItemListText;
+        private Dictionary<ShopItemData, int> _shopItemToCollect;
 
         private Inventory _inventory;
 
@@ -35,37 +39,52 @@ namespace Assets.Scripts
                 {new ShopItemData { ItemId = 0, ItemName = "Mleko" }, 10 },
                 {new ShopItemData { ItemId = 1, ItemName = "Woda" }, 10 },
                 {new ShopItemData { ItemId = 2, ItemName = "Sok" }, 10 },
-                {new ShopItemData { ItemId = 3, ItemName = "Chleb" }, 10 },
-                {new ShopItemData { ItemId = 4, ItemName = "Mleko" }, 10 }
+                {new ShopItemData { ItemId = 3, ItemName = "Chleb" }, 10 }
             };
 
 
             _inventory = GetComponent<Inventory>();
-            ShopItemListText.supportRichText = true;
-            RedrawUI();
+            ShopItemListPanel.rectTransform.sizeDelta = new Vector2(0, 0);
+            RedrawUi();
         }
 
-        public void RedrawUI()
+        public void RedrawUi()
         {
-            if (ShopItemListText != null)
+            
+            if (ShopItemToCollect != null && ShopItemToCollect.Count > 0)
             {
-                ShopItemListText.text = String.Join("\n\r", ShopItemToCollect.Keys.
-                    Select(item => getStringForItem(item, _inventory.GetAmountOfShopItemData(item))).ToArray<string>());
+                foreach (Transform child in ShopItemListPanel.transform)
+                {
+                    Destroy(child.gameObject);
+                }
+                var currentYPos = Margin;
+                var maxXPos = 0f;
+                foreach (ShopItemData item in ShopItemToCollect.Keys)
+                {
+                    var text = Instantiate(TextPrefab);
+                    text.transform.SetParent(ShopItemListPanel.transform, false);
+                    text.GetComponent<RectTransform>().anchoredPosition = new Vector2(Margin,-currentYPos);
+                    text.GetComponent<Text>().text = getStringForItem(item);
+                    text.GetComponent<StrikethroughText>().Strikethrough = _inventory.GetAmountOfShopItemData(item) >=
+                                                                           ShopItemToCollect[item];
+                    currentYPos += text.GetComponent<Text>().preferredHeight;
+                    maxXPos = maxXPos < text.GetComponent<Text>().preferredWidth ? text.GetComponent<Text>().preferredWidth :
+                    maxXPos;
+
+                }
+                ShopItemListPanel.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, currentYPos + Margin);
+                ShopItemListPanel.rectTransform.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, maxXPos + 2 * Margin);
             }
             else
             {
-                ShopItemListText.text = "";
+                ShopItemListPanel.rectTransform.sizeDelta = new Vector2(0,0);
             }
+            
         }
 
-        private string getStringForItem(ShopItemData item, int currentAmount)
+        private string getStringForItem(ShopItemData item)
         {
-            return String.Format(getFormat(ShopItemToCollect[item], currentAmount), String.Format("{0}x {1}", ShopItemToCollect[item], item.ItemName));
-        }
-
-        private string getFormat(int number, int currentAmount)
-        {
-            return currentAmount >= number ? "<strike>{0}</strike>" : "{0}";
+            return String.Format("{1} {2}/{0}", ShopItemToCollect[item], item.ItemName, _inventory.GetAmountOfShopItemData(item));
         }
     }
 }

@@ -32,7 +32,7 @@ namespace Assets.Scripts
             {
                 Items[item]++;
             }
-            _shopItemList.RedrawUI();
+            _shopItemList.RedrawUi();
         }
 
         public int GetAmountOfShopItemData(ShopItemData item)
