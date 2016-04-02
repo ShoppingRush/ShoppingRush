@@ -25,7 +25,7 @@ namespace Assets.Scripts
                 _isPlayer = true;
                 if (Input.GetKeyDown(KeyCode.E))
                 {
-                    other.SendMessage("AddItem", ShopItemData);
+                    other.GetComponent<Inventory>().AddItem(ShopItemData);
                     Destroy(gameObject);
                 }
             }
@@ -41,7 +41,7 @@ namespace Assets.Scripts
 
         void OnGUI()
         {
-            if (_isPlayer && !GameObject.Find("PauseMenu").GetComponent<PauseScript>().IsPaused)
+            if (_isPlayer && !GameObject.Find("PauseMenuGUI").GetComponent<PauseScript>().IsPaused)
             {
                 GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 10, 100, 20), "Press E to grab");
             }

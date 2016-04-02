@@ -1,7 +1,7 @@
 namespace Assets.Scripts
 {
     [System.Serializable]
-    public class  ShopItemData
+    public struct  ShopItemData
     {
         public string ItemName;
         public int ItemId;
