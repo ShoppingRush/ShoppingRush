@@ -23,7 +23,6 @@ namespace Assets.Scripts
 
         public void AddItem(ShopItemData item)
         {
-            Debug.Log("Gathering item: " + item.ItemName);
             if (!Items.ContainsKey(item))
             {
                 Items.Add(item, 1);

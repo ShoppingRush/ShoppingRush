@@ -1,10 +1,13 @@
+using System;
+
 namespace Assets.Scripts
 {
-    [System.Serializable]
+    [Serializable]
     public struct  ShopItemData
     {
         public string ItemName;
         public int ItemId;
+        public string Color;
 
     }
 }

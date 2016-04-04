@@ -34,12 +34,15 @@ namespace Assets.Scripts
         // Use this for initialization
         void Start()
         {
+            var items = JsonUtility.FromJson<Items>(System.IO.File.ReadAllText("Assets/Config/items.json")).ItemsData;
             _shopItemToCollect = new Dictionary<ShopItemData, int>()
             {
-                {new ShopItemData { ItemId = 0, ItemName = "Mleko" }, 10 },
-                {new ShopItemData { ItemId = 1, ItemName = "Woda" }, 10 },
-                {new ShopItemData { ItemId = 2, ItemName = "Sok" }, 10 },
-                {new ShopItemData { ItemId = 3, ItemName = "Chleb" }, 10 }
+                {items[0], 10 },
+                {items[1], 10 },
+                {items[2], 10 },
+                {items[3], 10 },
+                {items[4], 10 },
+                {items[5], 10 },
             };
 
 
