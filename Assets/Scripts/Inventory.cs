@@ -17,8 +17,8 @@ namespace Assets.Scripts
         }
     
         // Update is called once per frame
-        void Update () {
-    
+        void Update ()
+        {
         }
 
         public void AddItem(ShopItemData item)

@@ -3,8 +3,6 @@ using System.Collections;
 
 public class InitializeMap : MonoBehaviour
 {
-
-
     public GameObject ShelfPrefab;
 
     public GameObject MilkPrefab;
