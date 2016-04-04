@@ -12,20 +12,14 @@ public class InitializeCrowd : MonoBehaviour
 
     private List<GameObject> _people;
 
-    private GameObject _player;
-
-    private Camera _mainCamera;
-
     // Use this for initialization
     void Start ()
     {
-        _player = GameObject.FindGameObjectWithTag("Player");
-        _mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
         _people = new List<GameObject>();
         for (int i = 0; i <100; i++)
         {
             GameObject person = Instantiate(PersonPrefab);
-            person.transform.position = new Vector3(Random.Range(-13, 13) , 0.5f, Random.Range(-13, 13));
+            person.transform.position = new Vector3(Random.Range(-13, 13) , 2.5f, Random.Range(-13, 13));
             _people.Add(person);
         }
     }

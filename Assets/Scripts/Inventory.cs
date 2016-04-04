@@ -17,13 +17,12 @@ namespace Assets.Scripts
         }
     
         // Update is called once per frame
-        void Update () {
-    
+        void Update ()
+        {
         }
 
         public void AddItem(ShopItemData item)
         {
-            Debug.Log("Gathering item: " + item.ItemName);
             if (!Items.ContainsKey(item))
             {
                 Items.Add(item, 1);
