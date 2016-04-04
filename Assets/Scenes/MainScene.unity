@@ -370,7 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShelfPrefab: {fileID: 144720, guid: befe54b8f16069c4f92de4db0843b598, type: 2}
-  MilkPrefab: {fileID: 127792, guid: c2325fa1cf574ba4d9ad42f69953d9b6, type: 2}
+  ItemPrefab: {fileID: 127792, guid: c2325fa1cf574ba4d9ad42f69953d9b6, type: 2}
 --- !u!64 &299897744
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1513,7 +1513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_IsWalking: 0
-  m_IsCollision: 0
+  IsCollision: 0
   m_WalkSpeed: 5
   m_RunSpeed: 10
   m_RunstepLenghten: 0.7
