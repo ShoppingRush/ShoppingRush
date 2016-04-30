@@ -18,7 +18,7 @@ namespace Assets.Scripts
 
         public void PlayAgain()
         {
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene(SelectLevelMenu.CurrentLevel);
         }
     }
 }

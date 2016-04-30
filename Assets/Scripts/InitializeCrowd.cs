@@ -19,24 +19,8 @@ public class InitializeCrowd : MonoBehaviour
         for (int i = 0; i <100; i++)
         {
             GameObject person = Instantiate(PersonPrefab);
-            person.transform.position = new Vector3(Random.Range(-13, 13) , 2.5f, Random.Range(-13, 13));
+            person.transform.position = new Vector3(Random.Range(-13, 13) , 0f, Random.Range(-13, 13));
             _people.Add(person);
         }
     }
-
-    /*void Update()
-    {
-        foreach(GameObject person in _people)
-        {
-            RaycastHit hit;
-            Physics.Linecast(_player.transform.position, person.transform.position, out hit);
-            bool enabled = person.transform.Equals(hit.transform);
-                person.GetComponent<NavMeshAgent>().enabled = enabled;
-                person.GetComponent<Animator>().enabled = enabled;
-                person.GetComponent<AICharacterControl>().enabled = enabled;
-                person.GetComponent<ThirdPersonCharacter>().enabled = enabled;
-            person.GetComponent<Patrol>().enabled = enabled;
-            //bool enabled = Vector3.Distance(person.transform.position, _player.transform.position) < 10;
-        }
-    }*/
 }
