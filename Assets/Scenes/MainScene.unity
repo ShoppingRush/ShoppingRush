@@ -260,7 +260,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &222019584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -348,6 +348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsPaused: 0
   PauseMenuPanel: {fileID: 152434156}
+  FirstPersonController: {fileID: 1960751909}
 --- !u!222 &222019590
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1104,6 +1105,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory: {fileID: 1960751906}
+  EndGamePanel: {fileID: 0}
+  PauseMenu: {fileID: 222019588}
+  FirstPersonController: {fileID: 1960751909}
+  Timer: {fileID: 165007861}
 --- !u!65 &1537733624
 BoxCollider:
   m_ObjectHideFlags: 0

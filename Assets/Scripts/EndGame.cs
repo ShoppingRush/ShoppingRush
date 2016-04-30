@@ -1,12 +1,22 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityStandardAssets.Characters.FirstPerson;
 
 namespace Assets.Scripts
 {
-    public class EndGameScript : MonoBehaviour {
+    public class EndGame : MonoBehaviour {
 
         private bool _isPlayer;
 
         public Inventory Inventory;
+
+        public GameObject EndGamePanel;
+
+        public PauseMenu PauseMenu;
+
+        public FirstPersonController FirstPersonController;
+
+        public Timer Timer;
 
         void OnTriggerStay(Collider other)
         {
@@ -26,14 +36,15 @@ namespace Assets.Scripts
 
         void OnGUI()
         {
-            if (_isPlayer && !GameObject.Find("PauseMenuCanvas").GetComponent<PauseMenu>().IsPaused)
+            if (_isPlayer && !PauseMenu.IsPaused)
             {
                 if (Inventory.HasCollectedAllItems())
                 {
-                    GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 10, 100, 20), "Koniec gry");
+                    SceneManager.LoadScene("EndGame");
                 }
                 else
                 {
+                    // TODO improve this
                     GUI.Label(new Rect(Screen.width / 2 - 50, Screen.height / 2 - 10, 100, 20), "Nie zebrałeś jeszcze wszystkich przedmiotów");
                 }
             }

@@ -7,10 +7,11 @@ namespace Assets.Scripts
 {
     public class PauseMenu : MonoBehaviour
     {
-
         public bool IsPaused = false;
 
         public GameObject PauseMenuPanel;
+
+        public FirstPersonController FirstPersonController;
     
         // Update is called once per frame
         void Update ()
@@ -19,7 +20,7 @@ namespace Assets.Scripts
             {
                 IsPaused = true;
             }
-            (GameObject.Find("FPSController").GetComponent("FirstPersonController") as MonoBehaviour).enabled = !IsPaused;
+            FirstPersonController.enabled = !IsPaused;
             Time.timeScale = IsPaused ? 0 : 1;
             PauseMenuPanel.SetActive(IsPaused);
             Cursor.visible = IsPaused;

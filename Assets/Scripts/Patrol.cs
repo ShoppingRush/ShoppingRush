@@ -8,11 +8,9 @@ namespace Assets.Scripts
     {
         private NavMeshAgent _agent;
         private AICharacterControl _aiCharacterControl;
-        private GameObject _player;
 
         void Start()
         {
-            _player = GameObject.FindGameObjectWithTag("Player");
             _agent = GetComponent<NavMeshAgent>();
             _aiCharacterControl = GetComponent<AICharacterControl>();
             _agent.autoBraking = false;
