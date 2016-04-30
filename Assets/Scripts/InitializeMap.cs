@@ -13,15 +13,16 @@ public class InitializeMap : MonoBehaviour
     {
         var items = JsonUtility.FromJson<Items>(System.IO.File.ReadAllText("Assets/Config/items.json")).ItemsData;
         var number = 0;
-        foreach (Transform child in gameObject.transform)
+        foreach (Transform shelf in gameObject.transform)
         {
             for (int i = 0; i < 10; i++)
             {
                 GameObject item = Instantiate(ItemPrefab);
-                item.transform.parent = child;
+                item.transform.parent = shelf;
                 item.GetComponent<ShopItem>().ShopItemData = items[number%items.Count];
                 item.GetComponent<MeshRenderer>().material.color = ParseColor(items[number % items.Count].Color);
-                item.transform.localPosition = new Vector3(0.1f * i - 0.5f, 0.2f, 0.6f);
+
+                item.transform.localPosition = new Vector3(i - 5f, 2f, 1.25f + 0.2f);
             }
             number ++;
         }

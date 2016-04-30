@@ -91,6 +91,7 @@ MonoBehaviour:
   ShopItemData:
     ItemName: Mleko
     ItemId: 0
+    Color: 
 --- !u!135 &13587324
 SphereCollider:
   m_ObjectHideFlags: 1

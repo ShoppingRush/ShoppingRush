@@ -814,15 +814,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
       propertyPath: m_LocalScale.z
-      value: 2.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
       propertyPath: m_StaticEditorFlags
