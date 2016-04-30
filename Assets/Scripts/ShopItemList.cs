@@ -37,12 +37,12 @@ namespace Assets.Scripts
             var items = JsonUtility.FromJson<Items>(System.IO.File.ReadAllText("Assets/Config/items.json")).ItemsData;
             _shopItemToCollect = new Dictionary<ShopItemData, int>()
             {
-                {items[0], 10 },
-                {items[1], 10 },
-                {items[2], 10 },
-                {items[3], 10 },
-                {items[4], 10 },
-                {items[5], 10 },
+                {items[0], 1 },
+                {items[1], 1 },
+                {items[2], 1 },
+                {items[3], 1 },
+                {items[4], 1 },
+                {items[5], 1 },
             };
 
 
