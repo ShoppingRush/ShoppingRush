@@ -348,6 +348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IsPaused: 0
   PauseMenuPanel: {fileID: 152434156}
+  FirstPersonController: {fileID: 1960751909}
 --- !u!222 &222019590
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -810,7 +811,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
       propertyPath: m_LocalScale.x
@@ -915,6 +916,34 @@ Prefab:
     - target: {fileID: 100024, guid: 34aba469668879442b623876ec62c0b4, type: 3}
       propertyPath: m_NavMeshLayer
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 100002, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100006, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100008, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100010, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100014, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9500000, guid: 34aba469668879442b623876ec62c0b4, type: 3}
@@ -1060,6 +1089,38 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1524430181}
+--- !u!1 &1537733619 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100026, guid: 34aba469668879442b623876ec62c0b4, type: 3}
+  m_PrefabInternal: {fileID: 1475259386}
+--- !u!114 &1537733621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537733619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2d21afdce5e97f44ae766a9d323f8b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Inventory: {fileID: 1960751906}
+  EndGamePanel: {fileID: 0}
+  PauseMenu: {fileID: 222019588}
+  FirstPersonController: {fileID: 1960751909}
+  Timer: {fileID: 165007861}
+--- !u!65 &1537733624
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1537733619}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.4, y: 26.499992, z: 1.4999996}
+  m_Center: {x: 0.2, y: 1.7499998, z: -0.25000036}
 --- !u!1 &1695169957
 GameObject:
   m_ObjectHideFlags: 0
@@ -1477,7 +1538,7 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - time: 0
-      value: 1
+      value: 0.363
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -1635,8 +1696,8 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1960751905}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -13}
+  m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.3826833}
+  m_LocalPosition: {x: 0, y: 0, z: 13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2068436530}
@@ -1644,7 +1705,7 @@ RectTransform:
   m_RootOrder: 4
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 19, y: 0.87}
+  m_AnchoredPosition: {x: -22, y: 0.87}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!208 &1960751913

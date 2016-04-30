@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Assets.Scripts
@@ -38,6 +39,11 @@ namespace Assets.Scripts
         {
             int value;
             return Items.TryGetValue(item, out value) ? value : 0;
+        }
+
+        public bool HasCollectedAllItems()
+        {
+            return _shopItemList.ShopItemToCollect.Keys.All(key => GetAmountOfShopItemData(key) >= _shopItemList.ShopItemToCollect[key]);
         }
     }
 }

@@ -15,16 +15,19 @@ public class InitializeMap : MonoBehaviour
         var number = 0;
         foreach (Transform shelf in gameObject.transform)
         {
-            for (int i = 0; i < 10; i++)
+            if (shelf.gameObject.tag.Contains("Shelf"))
             {
-                GameObject item = Instantiate(ItemPrefab);
-                item.transform.parent = shelf;
-                item.GetComponent<ShopItem>().ShopItemData = items[number%items.Count];
-                item.GetComponent<MeshRenderer>().material.color = ParseColor(items[number % items.Count].Color);
+                for (int i = 0; i < 10; i++)
+                {
+                    GameObject item = Instantiate(ItemPrefab);
+                    item.transform.parent = shelf;
+                    item.GetComponent<ShopItem>().ShopItemData = items[number % items.Count];
+                    item.GetComponent<MeshRenderer>().material.color = ParseColor(items[number % items.Count].Color);
 
-                item.transform.localPosition = new Vector3(i - 5f, 2f, 1.25f + 0.2f);
+                    item.transform.localPosition = new Vector3(i - 5f, 2f, 1.25f + 0.2f);
+                }
+                number++;
             }
-            number ++;
         }
     }
 
