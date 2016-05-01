@@ -6,7 +6,7 @@ namespace Assets.Scripts
 {
     public class SelectLevelMenu : MonoBehaviour
     {
-        private string _activeLevel;
+        public static string CurrentLevel = "MainScene";
 
         private Image _levelImage;
 
@@ -32,7 +32,7 @@ namespace Assets.Scripts
         public void SelectLevel(string levelName)
         {
             _playButton.interactable = true;
-            _activeLevel = levelName;
+            CurrentLevel = levelName;
         }
 
         public void ShowImage(Sprite image)
@@ -42,7 +42,7 @@ namespace Assets.Scripts
 
         public void StartSelectedLevel()
         {
-            LoadLevel(_activeLevel);
+            LoadLevel(CurrentLevel);
         }
     }
 }

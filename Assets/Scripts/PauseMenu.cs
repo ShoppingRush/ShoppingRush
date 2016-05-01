@@ -45,5 +45,10 @@ namespace Assets.Scripts
 #endif
 
         }
+
+        public void RestartLevel()
+        {
+            SceneManager.LoadScene(SelectLevelMenu.CurrentLevel);
+        }
     }
 }
