@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using Assets.Scripts;
+using UnityEngine.SceneManagement;
 
 public class InitializeMap : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class InitializeMap : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
         var items = JsonUtility.FromJson<Items>(System.IO.File.ReadAllText("Assets/Config/items.json")).ItemsData;
         var number = 0;
         foreach (var shelf in GameObject.FindGameObjectsWithTag("Shelf"))
@@ -31,7 +33,7 @@ public class InitializeMap : MonoBehaviour
          var strings = col.Split(',');
          Color color = new Color();
          for (var i = 0; i < 4; i++) {
-            color[i] = System.Single.Parse(strings[i]);
+            color[i] = float.Parse(strings[i]);
          }
          return color;
      }
