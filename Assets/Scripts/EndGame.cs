@@ -10,13 +10,7 @@ namespace Assets.Scripts
 
         public Inventory Inventory;
 
-        public GameObject EndGamePanel;
-
-        public PauseMenu PauseMenu;
-
-        public FirstPersonController FirstPersonController;
-
-        public Timer Timer;
+        private bool _pause;
 
         void OnTriggerStay(Collider other)
         {
@@ -34,9 +28,14 @@ namespace Assets.Scripts
             }
         }
 
+        public void OnPause(bool pause)
+        {
+            _pause = pause;
+        }
+
         void OnGUI()
         {
-            if (_isPlayer && !PauseMenu.IsPaused)
+            if (_isPlayer && !_pause)
             {
                 if (Inventory.HasCollectedAllItems())
                 {

@@ -7,13 +7,12 @@ namespace Assets.Scripts
     [RequireComponent(typeof(ShopItemList))]
     public class Inventory : MonoBehaviour
     {
-        public Dictionary<ShopItemData, int> Items;
+        public Dictionary<ShopItemData, int> Items = new Dictionary<ShopItemData, int>();
 
         private ShopItemList _shopItemList;
 
         // Use this for initialization
         void Start () {
-            Items = new Dictionary<ShopItemData, int>();
             _shopItemList = GetComponent<ShopItemList>();
         }
     

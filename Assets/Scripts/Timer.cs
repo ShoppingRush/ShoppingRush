@@ -38,7 +38,10 @@ namespace Assets.Scripts
 
         public void OnPause(bool pause)
         {
-            CountdownText.enabled = !pause;
+            if (Countdown)
+            {
+                CountdownText.enabled = !pause;
+            }
         }
     
         // Update is called once per frame
@@ -72,10 +75,10 @@ namespace Assets.Scripts
                 countdownValue--;
                 yield return new WaitForSeconds(1);
             }
-            Countdown = false;
             FirstPersonController.enabled = true;
             CountdownText.text = "START!";
             yield return new WaitForSeconds(0.75f);
+            Countdown = false;
             CountdownText.enabled = false;
         }
     }
