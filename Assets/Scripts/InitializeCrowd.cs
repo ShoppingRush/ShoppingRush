@@ -19,7 +19,8 @@ public class InitializeCrowd : MonoBehaviour
         for (int i = 0; i <100; i++)
         {
             GameObject person = Instantiate(PersonPrefab);
-            person.transform.position = new Vector3(Random.Range(-13, 13) , 0f, Random.Range(-13, 13));
+            var position  = Patrol.RandomNavCircle(new Vector3(1, 0.5f, 17.5f), 50, 1);
+            person.transform.position = position;
             _people.Add(person);
         }
     }

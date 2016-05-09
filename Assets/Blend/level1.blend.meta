@@ -29,6 +29,15 @@ ModelImporter:
     100042: Shelf_019
     100044: shop
     100046: Till
+    100048: floor
+    100050: floorTill
+    100052: leve1
+    100054: roof
+    100056: stepDown
+    100058: stepUp
+    100060: level1
+    100062: stairDown
+    100064: stairUp
     400000: //RootNode
     400002: Cube
     400004: Shelf
@@ -53,6 +62,15 @@ ModelImporter:
     400042: Shelf_019
     400044: shop
     400046: Till
+    400048: floor
+    400050: floorTill
+    400052: leve1
+    400054: roof
+    400056: stepDown
+    400058: stepUp
+    400060: level1
+    400062: stairDown
+    400064: stairUp
     2300000: //RootNode
     2300002: Cube
     2300004: Shelf
@@ -77,6 +95,15 @@ ModelImporter:
     2300042: Shelf_019
     2300044: shop
     2300046: Till
+    2300048: floor
+    2300050: floorTill
+    2300052: leve1
+    2300054: roof
+    2300056: stepDown
+    2300058: stepUp
+    2300060: level1
+    2300062: stairDown
+    2300064: stairUp
     3300000: //RootNode
     3300002: Cube
     3300004: Shelf
@@ -101,6 +128,15 @@ ModelImporter:
     3300042: Shelf_019
     3300044: shop
     3300046: Till
+    3300048: floor
+    3300050: floorTill
+    3300052: leve1
+    3300054: roof
+    3300056: stepDown
+    3300058: stepUp
+    3300060: level1
+    3300062: stairDown
+    3300064: stairUp
     4300000: shop
     4300002: Shelf_019
     4300004: Shelf_018
@@ -124,6 +160,15 @@ ModelImporter:
     4300040: Cube
     4300042: Shelf
     4300044: Till
+    4300046: stepDown
+    4300048: stepUp
+    4300050: roof
+    4300052: leve1
+    4300054: floor
+    4300056: floorTill
+    4300058: level1
+    4300060: stairDown
+    4300062: stairUp
     7400000: Default Take
     9500000: //RootNode
   materials:
