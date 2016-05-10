@@ -21,7 +21,7 @@ namespace Assets.Scripts
 
         public void StartGame()
         {
-            SceneManager.LoadScene("MainScene");
+            SceneManager.LoadScene(Level.Level1.ToString());
         }
     }
 }

@@ -38,6 +38,8 @@ ModelImporter:
     100060: level1
     100062: stairDown
     100064: stairUp
+    100066: Shelf_000
+    100068: Shelf_020
     400000: //RootNode
     400002: Cube
     400004: Shelf
@@ -71,6 +73,8 @@ ModelImporter:
     400060: level1
     400062: stairDown
     400064: stairUp
+    400066: Shelf_000
+    400068: Shelf_020
     2300000: //RootNode
     2300002: Cube
     2300004: Shelf
@@ -104,6 +108,8 @@ ModelImporter:
     2300060: level1
     2300062: stairDown
     2300064: stairUp
+    2300066: Shelf_000
+    2300068: Shelf_020
     3300000: //RootNode
     3300002: Cube
     3300004: Shelf
@@ -137,6 +143,8 @@ ModelImporter:
     3300060: level1
     3300062: stairDown
     3300064: stairUp
+    3300066: Shelf_000
+    3300068: Shelf_020
     4300000: shop
     4300002: Shelf_019
     4300004: Shelf_018
@@ -169,6 +177,8 @@ ModelImporter:
     4300058: level1
     4300060: stairDown
     4300062: stairUp
+    4300064: Shelf_020
+    4300066: Shelf_000
     7400000: Default Take
     9500000: //RootNode
   materials:
