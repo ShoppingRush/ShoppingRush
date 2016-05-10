@@ -48,6 +48,8 @@ namespace Assets.Scripts
                 _timer = 0;
             }
 
+
+            // TODO only on change
             switch (GetLevel())
             {
                 case Level.Upstair:
