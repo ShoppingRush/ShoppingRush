@@ -7,14 +7,15 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 4
   m_Component:
-  - 224: {fileID: 22472394}
+  - 224: {fileID: 22494748}
   - 143: {fileID: 14300000}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   - 82: {fileID: 8200000}
-  - 114: {fileID: 11403384}
-  - 114: {fileID: 11416734}
-  - 208: {fileID: 20879108}
+  - 114: {fileID: 11437288}
+  - 114: {fileID: 11440078}
+  - 208: {fileID: 20841132}
+  - 114: {fileID: 11402246}
   m_Layer: 0
   m_Name: FPSController
   m_TagString: Player
@@ -46,10 +47,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalPosition: {x: 0, y: 0.6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 22472394}
+  m_Father: {fileID: 22494748}
   m_RootOrder: 0
 --- !u!20 &2000000
 Camera:
@@ -277,7 +278,18 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8bc94ec6ed537e743b481638bdcd503d, type: 3}
   m_JumpSound: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   m_LandSound: {fileID: 8300000, guid: 3b09d59f4499d45428baa7a21e954296, type: 3}
---- !u!114 &11403384
+--- !u!114 &11402246
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a02a49cdb17908b4eb0f7afc2b418b09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11437288
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -291,7 +303,7 @@ MonoBehaviour:
   Margin: 8
   ShopItemListPanel: {fileID: 0}
   TextPrefab: {fileID: 135088, guid: 7b51faa85bcbd584e89eb3d6ec877a2a, type: 2}
---- !u!114 &11416734
+--- !u!114 &11440078
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -312,14 +324,14 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 1.8
+  m_Height: 1.56
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!208 &20879108
+--- !u!208 &20841132
 NavMeshObstacle:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -334,14 +346,14 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!224 &22472394
+--- !u!224 &22494748
 RectTransform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0.92387956, z: 0, w: 0.3826833}
-  m_LocalPosition: {x: 0, y: 0, z: 38}
+  m_LocalPosition: {x: 0, y: 0, z: 13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -349,7 +361,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24, y: 1.36}
+  m_AnchoredPosition: {x: -22, y: 0.87}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
