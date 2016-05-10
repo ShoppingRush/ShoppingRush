@@ -15,11 +15,11 @@ namespace Assets.Scripts
 
         public float PatrolTimer;
 
-        private GameObject _player;
-
         private float _timer;
 
         private NavMeshAgent _agent;
+
+        private FloorLevel _latestLevel;
 
         public Patrol(float timer)
         {
@@ -33,40 +33,44 @@ namespace Assets.Scripts
             _timer = PatrolTimer;
             _navMeshAgent = GetComponent<NavMeshAgent>();
 
-            _player = GameObject.FindWithTag("Player");
+            _latestLevel = GetLevel();
         }
 
         // Update is called once per frame
         void Update()
         {
+            var currentLevel = GetLevel();
             _timer += Time.deltaTime;
 
-            if ((_timer >= PatrolTimer || _agent.remainingDistance < 0.5) && GetLevel() != Level.Stair)
+            if ((_timer >= PatrolTimer || _agent.remainingDistance < 0.5) && currentLevel != FloorLevel.Stair)
             {
-                Vector3 newPos = RandomNavCircle(_player.transform.position, PatrolRadius, NavMesh.AllAreas);
+                var items = new List<GameObject>(GameObject.FindGameObjectsWithTag("Item"));
+                var newPos = RandomNavSphere(items[Random.Range(0, items.Count - 1)].transform.position, PatrolRadius, NavMesh.AllAreas);
                 _agent.SetDestination(newPos);
                 _timer = 0;
             }
 
-
-            // TODO only on change
-            switch (GetLevel())
+            if (_latestLevel != currentLevel)
             {
-                case Level.Upstair:
-                    _navMeshAgent.areaMask = NavMesh.AllAreas ^ 1 << NavMesh.GetAreaFromName("StairUp");
-                    break;
-                case Level.Downstair:
-                    _navMeshAgent.areaMask = NavMesh.AllAreas ^ 1 << NavMesh.GetAreaFromName("StairDown");
-                    break;
-                case Level.Stair:
-                    _navMeshAgent.areaMask = NavMesh.AllAreas;
-                    break;
-                default:
-                    throw new ArgumentOutOfRangeException();
+                switch (currentLevel)
+                {
+                    case FloorLevel.Upstair:
+                        _navMeshAgent.areaMask = NavMesh.AllAreas ^ 1 << NavMesh.GetAreaFromName("StairUp");
+                        break;
+                    case FloorLevel.Downstair:
+                        _navMeshAgent.areaMask = NavMesh.AllAreas ^ 1 << NavMesh.GetAreaFromName("StairDown");
+                        break;
+                    case FloorLevel.Stair:
+                        _navMeshAgent.areaMask = NavMesh.AllAreas;
+                        break;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                }
             }
+            _latestLevel = currentLevel;
         }
 
-        public static Vector3 RandomNavCircle(Vector3 origin, float dist, int layermask)
+        public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
         {
             Vector3 randDirection = Random.insideUnitSphere * dist;
             randDirection += origin;
@@ -76,21 +80,21 @@ namespace Assets.Scripts
             return navHit.position;
         }
 
-        private Level GetLevel()
+        private FloorLevel GetLevel()
         {
             if (transform.position.y < 0.55f)
             {
-                return Level.Downstair;
+                return FloorLevel.Downstair;
             }
             if (transform.position.y > 4.45f)
             {
-                return Level.Upstair;
+                return FloorLevel.Upstair;
             }
-            return Level.Stair;
+            return FloorLevel.Stair;
         }
     }
 
-    internal enum Level
+    internal enum FloorLevel
     {
         Upstair,
         Downstair,

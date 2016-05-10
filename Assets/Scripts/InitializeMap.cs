@@ -11,6 +11,7 @@ public class InitializeMap : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        SelectLevelMenu.CurrentLevel = SceneManager.GetActiveScene().name;
 
         var items = JsonUtility.FromJson<Items>(System.IO.File.ReadAllText("Assets/Config/items.json")).ItemsData;
         var colors = items.Select(item => ParseColor(item.Color)).ToList();

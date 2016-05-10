@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Assets.Scripts
@@ -19,6 +20,13 @@ namespace Assets.Scripts
         public void PlayAgain()
         {
             SceneManager.LoadScene(SelectLevelMenu.CurrentLevel);
+        }
+
+        public void NextLevel()
+        {
+            var currentLevel = (Level) Enum.Parse(typeof (Level), SelectLevelMenu.CurrentLevel);
+            currentLevel++;
+            SceneManager.LoadScene(currentLevel.ToString());
         }
     }
 }
