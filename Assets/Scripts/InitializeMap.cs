@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class InitializeMap : MonoBehaviour
 {
-    public GameObject ItemPrefab;
+    public GameObject[] Items;
 
     // Use this for initialization
     void Start()
@@ -27,7 +27,7 @@ public class InitializeMap : MonoBehaviour
                         for (var side = -1; side < 2; side+=2)
                         {
                             var itemNumber = random.Next(items.Count);
-                            GameObject item = Instantiate(ItemPrefab);
+                            GameObject item = Instantiate(Items[itemNumber]);
                             item.transform.parent = shelf.transform;
                             item.GetComponent<ShopItem>().ShopItemData = items[itemNumber];
                             item.GetComponent<MeshRenderer>().material.color = colors[itemNumber];

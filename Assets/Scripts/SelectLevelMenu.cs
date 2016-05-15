@@ -6,7 +6,7 @@ namespace Assets.Scripts
 {
     public class SelectLevelMenu : MonoBehaviour
     {
-        public static string CurrentLevel = "MainMenu";
+        public static string CurrentLevel = "Level1";
 
         private Image _levelImage;
 
