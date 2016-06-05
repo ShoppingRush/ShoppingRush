@@ -21,6 +21,14 @@ ModelImporter:
     100026: Shelf_005
     100028: Shelf_006
     100030: Shelf_007
+    100032: Till
+    100034: till_001
+    100036: till_002
+    100038: till_003
+    100040: till_004
+    100042: till_005
+    100044: till_006
+    100046: till_007
     400000: //RootNode
     400002: shelf
     400004: shelf_001
@@ -37,6 +45,14 @@ ModelImporter:
     400026: Shelf_005
     400028: Shelf_006
     400030: Shelf_007
+    400032: Till
+    400034: till_001
+    400036: till_002
+    400038: till_003
+    400040: till_004
+    400042: till_005
+    400044: till_006
+    400046: till_007
     2300000: //RootNode
     2300002: shelf
     2300004: shelf_001
@@ -53,6 +69,14 @@ ModelImporter:
     2300026: Shelf_005
     2300028: Shelf_006
     2300030: Shelf_007
+    2300032: Till
+    2300034: till_001
+    2300036: till_002
+    2300038: till_003
+    2300040: till_004
+    2300042: till_005
+    2300044: till_006
+    2300046: till_007
     3300000: //RootNode
     3300002: shelf
     3300004: shelf_001
@@ -69,6 +93,14 @@ ModelImporter:
     3300026: Shelf_005
     3300028: Shelf_006
     3300030: Shelf_007
+    3300032: Till
+    3300034: till_001
+    3300036: till_002
+    3300038: till_003
+    3300040: till_004
+    3300042: till_005
+    3300044: till_006
+    3300046: till_007
     4300000: shop
     4300002: till
     4300004: shelf_004
@@ -85,6 +117,14 @@ ModelImporter:
     4300026: Shelf_001
     4300028: Shelf_006
     4300030: Shelf_007
+    4300032: Till
+    4300034: till_001
+    4300036: till_002
+    4300038: till_003
+    4300040: till_004
+    4300042: till_005
+    4300044: till_006
+    4300046: till_007
     7400000: Default Take
     9500000: //RootNode
   materials:
