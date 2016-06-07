@@ -183,10 +183,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 357147846}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5444336, y: 2.192871, z: 7.6901855}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 601504857}
+  - {fileID: 1710740082}
   m_Father: {fileID: 0}
   m_RootOrder: 6
 --- !u!114 &357147848
@@ -201,8 +201,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Map: {fileID: 1736313976}
-  Items:
-  - {fileID: 127792, guid: c2325fa1cf574ba4d9ad42f69953d9b6, type: 2}
+  ShelfGroups:
+  - {fileID: 100026, guid: bc5e32fd7f8d51740ae84bbdaa51fa68, type: 3}
+  - {fileID: 100108, guid: bc5e32fd7f8d51740ae84bbdaa51fa68, type: 3}
+  - {fileID: 100094, guid: bc5e32fd7f8d51740ae84bbdaa51fa68, type: 3}
+  - {fileID: 100076, guid: bc5e32fd7f8d51740ae84bbdaa51fa68, type: 3}
+  - {fileID: 100452, guid: a4444fa58f46c86449eceacc3605d82c, type: 3}
+  - {fileID: 100272, guid: a4444fa58f46c86449eceacc3605d82c, type: 3}
+  - {fileID: 100038, guid: 8c7b28c0168741d40984da932487744f, type: 3}
+  - {fileID: 100098, guid: 8c7b28c0168741d40984da932487744f, type: 3}
+  - {fileID: 100200, guid: 8c7b28c0168741d40984da932487744f, type: 3}
+  - {fileID: 100238, guid: 8c7b28c0168741d40984da932487744f, type: 3}
   VegetableStallGroups:
   - {fileID: 100114, guid: 3cb5b60bdf9664e4989f78db11e04518, type: 3}
   - {fileID: 100126, guid: 3cb5b60bdf9664e4989f78db11e04518, type: 3}
@@ -338,81 +347,169 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 357147847}
     m_Modifications:
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.5444336
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -2.192871
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.6901855
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 100000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-      propertyPath: m_Name
-      value: Level2
-      objectReference: {fileID: 0}
-    - target: {fileID: 100600, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+    - target: {fileID: 100666, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
       value: VegetableStall
       objectReference: {fileID: 0}
-    - target: {fileID: 100684, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+    - target: {fileID: 100668, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
       value: VegetableStall
       objectReference: {fileID: 0}
-    - target: {fileID: 100686, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+    - target: {fileID: 100662, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
       value: VegetableStall
       objectReference: {fileID: 0}
-    - target: {fileID: 100602, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+    - target: {fileID: 100664, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
       value: VegetableStall
       objectReference: {fileID: 0}
-    - target: {fileID: 100598, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+    - target: {fileID: 100670, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
       value: VegetableStall
       objectReference: {fileID: 0}
-    - target: {fileID: 100596, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+    - target: {fileID: 100676, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
       value: VegetableStall
       objectReference: {fileID: 0}
-    - target: {fileID: 100594, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+    - target: {fileID: 100674, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
       value: VegetableStall
+      objectReference: {fileID: 0}
+    - target: {fileID: 100672, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: VegetableStall
+      objectReference: {fileID: 0}
+    - target: {fileID: 100532, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100534, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100550, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100558, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100546, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100538, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100552, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100542, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100536, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100554, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100540, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100544, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100556, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100548, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100562, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100560, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: Shelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 100584, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100572, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100568, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100574, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100570, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100580, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100576, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100582, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100566, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100588, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100590, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
       objectReference: {fileID: 0}
     - target: {fileID: 100592, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
       propertyPath: m_TagString
-      value: VegetableStall
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100594, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100596, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100578, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
+      objectReference: {fileID: 0}
+    - target: {fileID: 100586, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+      propertyPath: m_TagString
+      value: ShelfLarge
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
   m_IsPrefabParent: 0
---- !u!4 &601504857 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
-  m_PrefabInternal: {fileID: 601504856}
 --- !u!1 &723725884
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,7 +639,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22454492, guid: 5c11d952bb8858b43a1f1ab2d899c27c, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 22454492, guid: 5c11d952bb8858b43a1f1ab2d899c27c, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -703,7 +800,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22494748, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 22494748, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_AnchoredPosition.x
@@ -749,18 +846,13 @@ Prefab:
       propertyPath: ShopItemListPanel
       value: 
       objectReference: {fileID: 1479404378}
-    - target: {fileID: 11402246, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-      propertyPath: Camera
-      value: 
-      objectReference: {fileID: 1649356420}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
---- !u!20 &1649356420 stripped
-Camera:
-  m_PrefabParentObject: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 2}
-  m_PrefabInternal: {fileID: 1649356419}
+--- !u!4 &1710740082 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400176, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
+  m_PrefabInternal: {fileID: 601504856}
 --- !u!1 &1736313976 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 48ad446606f3e39438ec58fa6703f069, type: 3}
@@ -930,7 +1022,7 @@ Light:
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_Strength: 1
     m_Bias: 0.05
