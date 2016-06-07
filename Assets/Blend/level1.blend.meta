@@ -48,6 +48,17 @@ ModelImporter:
     100080: till_005
     100082: till_006
     100084: till_007
+    100086: Shelf_021
+    100088: Shelf_022
+    100090: Shelf_023
+    100092: Shelf_024
+    100094: Shelf_027
+    100096: Shelf_028
+    100098: Shelf_029
+    100100: Shelf_030
+    100102: Shelf_031
+    100104: Shelf_025
+    100106: Shelf_026
     400000: //RootNode
     400002: Cube
     400004: Shelf
@@ -91,6 +102,17 @@ ModelImporter:
     400080: till_005
     400082: till_006
     400084: till_007
+    400086: Shelf_021
+    400088: Shelf_022
+    400090: Shelf_023
+    400092: Shelf_024
+    400094: Shelf_027
+    400096: Shelf_028
+    400098: Shelf_029
+    400100: Shelf_030
+    400102: Shelf_031
+    400104: Shelf_025
+    400106: Shelf_026
     2300000: //RootNode
     2300002: Cube
     2300004: Shelf
@@ -134,6 +156,17 @@ ModelImporter:
     2300080: till_005
     2300082: till_006
     2300084: till_007
+    2300086: Shelf_021
+    2300088: Shelf_022
+    2300090: Shelf_023
+    2300092: Shelf_024
+    2300094: Shelf_027
+    2300096: Shelf_028
+    2300098: Shelf_029
+    2300100: Shelf_030
+    2300102: Shelf_031
+    2300104: Shelf_025
+    2300106: Shelf_026
     3300000: //RootNode
     3300002: Cube
     3300004: Shelf
@@ -177,6 +210,17 @@ ModelImporter:
     3300080: till_005
     3300082: till_006
     3300084: till_007
+    3300086: Shelf_021
+    3300088: Shelf_022
+    3300090: Shelf_023
+    3300092: Shelf_024
+    3300094: Shelf_027
+    3300096: Shelf_028
+    3300098: Shelf_029
+    3300100: Shelf_030
+    3300102: Shelf_031
+    3300104: Shelf_025
+    3300106: Shelf_026
     4300000: shop
     4300002: Shelf_019
     4300004: Shelf_018
@@ -219,6 +263,17 @@ ModelImporter:
     4300078: till_002
     4300080: till_001
     4300082: till
+    4300084: Shelf_021
+    4300086: Shelf_031
+    4300088: Shelf_030
+    4300090: Shelf_029
+    4300092: Shelf_028
+    4300094: Shelf_027
+    4300096: Shelf_024
+    4300098: Shelf_023
+    4300100: Shelf_022
+    4300102: Shelf_026
+    4300104: Shelf_025
     7400000: Default Take
     9500000: //RootNode
   materials:
