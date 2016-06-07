@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 48ad446606f3e39438ec58fa6703f069
-timeCreated: 1462874596
+timeCreated: 1465234775
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -324,6 +324,31 @@ ModelImporter:
     100632: Stick_005
     100634: Stick_006
     100636: Stick_007
+    100638: AntiTheftGateGroup
+    100640: Architecture
+    100642: CheckoutGroup
+    100644: Column
+    100646: Column_001
+    100648: Column_002
+    100650: Column_003
+    100652: Column_004
+    100654: Column_005
+    100656: Column_006
+    100658: Column_007
+    100660: Column_008
+    100662: Column_009
+    100664: Column_010
+    100666: Column_011
+    100668: Column_012
+    100670: Column_013
+    100672: FreezerGroup
+    100674: HangerGroup
+    100676: RefrigeratorGroup
+    100678: ShelfGroup
+    100680: VegetableStallGroup
+    100682: Plane_005
+    100684: VegetableStall_006
+    100686: VegetableStall_007
     400000: //RootNode
     400002: shelf
     400004: shelf_001
@@ -643,6 +668,31 @@ ModelImporter:
     400632: Stick_005
     400634: Stick_006
     400636: Stick_007
+    400638: AntiTheftGateGroup
+    400640: Architecture
+    400642: CheckoutGroup
+    400644: Column
+    400646: Column_001
+    400648: Column_002
+    400650: Column_003
+    400652: Column_004
+    400654: Column_005
+    400656: Column_006
+    400658: Column_007
+    400660: Column_008
+    400662: Column_009
+    400664: Column_010
+    400666: Column_011
+    400668: Column_012
+    400670: Column_013
+    400672: FreezerGroup
+    400674: HangerGroup
+    400676: RefrigeratorGroup
+    400678: ShelfGroup
+    400680: VegetableStallGroup
+    400682: Plane_005
+    400684: VegetableStall_006
+    400686: VegetableStall_007
     2300000: //RootNode
     2300002: shelf
     2300004: shelf_001
@@ -946,6 +996,23 @@ ModelImporter:
     2300600: Stick_005
     2300602: Stick_006
     2300604: Stick_007
+    2300606: Column
+    2300608: Column_001
+    2300610: Column_002
+    2300612: Column_003
+    2300614: Column_004
+    2300616: Column_005
+    2300618: Column_006
+    2300620: Column_007
+    2300622: Column_008
+    2300624: Column_009
+    2300626: Column_010
+    2300628: Column_011
+    2300630: Column_012
+    2300632: Column_013
+    2300634: Plane_005
+    2300636: VegetableStall_006
+    2300638: VegetableStall_007
     3300000: //RootNode
     3300002: shelf
     3300004: shelf_001
@@ -1249,6 +1316,23 @@ ModelImporter:
     3300600: Stick_005
     3300602: Stick_006
     3300604: Stick_007
+    3300606: Column
+    3300608: Column_001
+    3300610: Column_002
+    3300612: Column_003
+    3300614: Column_004
+    3300616: Column_005
+    3300618: Column_006
+    3300620: Column_007
+    3300622: Column_008
+    3300624: Column_009
+    3300626: Column_010
+    3300628: Column_011
+    3300630: Column_012
+    3300632: Column_013
+    3300634: Plane_005
+    3300636: VegetableStall_006
+    3300638: VegetableStall_007
     4300000: shop
     4300002: till
     4300004: shelf_004
@@ -1552,6 +1636,23 @@ ModelImporter:
     4300600: ShelfLarge_002
     4300602: ShelfLarge_001
     4300604: ShelfLarge
+    4300606: Column_013
+    4300608: Column_012
+    4300610: Column_011
+    4300612: Column_010
+    4300614: Column_009
+    4300616: Column_008
+    4300618: Column_007
+    4300620: Column_006
+    4300622: Column_005
+    4300624: Column_004
+    4300626: Column_003
+    4300628: Column_002
+    4300630: Column_001
+    4300632: Column
+    4300634: Plane_005
+    4300636: VegetableStall_007
+    4300638: VegetableStall_006
     6400000: Cylinder_000
     6400002: Cylinder_001
     6400004: Cylinder_002
@@ -1849,6 +1950,23 @@ ModelImporter:
     6400588: Stick_005
     6400590: Stick_006
     6400592: Stick_007
+    6400594: Column
+    6400596: Column_001
+    6400598: Column_002
+    6400600: Column_003
+    6400602: Column_004
+    6400604: Column_005
+    6400606: Column_006
+    6400608: Column_007
+    6400610: Column_008
+    6400612: Column_009
+    6400614: Column_010
+    6400616: Column_011
+    6400618: Column_012
+    6400620: Column_013
+    6400622: Plane_005
+    6400624: VegetableStall_006
+    6400626: VegetableStall_007
     7400000: Default Take
     9500000: //RootNode
   materials:

@@ -7,17 +7,42 @@ using UnityEngine.SceneManagement;
 
 public class InitializeMap : MonoBehaviour
 {
+    public GameObject Map;
+
     public GameObject[] Items;
+
+    public GameObject[] VegetableStallGroups;
+
+
 
     // Use this for initialization
     void Start()
     {
         SelectLevelMenu.CurrentLevel = SceneManager.GetActiveScene().name;
 
-        var prefabs = Directory.GetFiles("Assets\\Prefabs\\Items", "*.prefab", SearchOption.AllDirectories);
+        //var prefabs = Directory.GetFiles("Assets\\Prefabs\\Items", "*.prefab", SearchOption.AllDirectories);
+
 
         var random = new System.Random();
-        foreach (var shelf in GameObject.FindGameObjectsWithTag("Shelf"))
+        var freezers = GameObject.FindGameObjectsWithTag(Tags.Freezer.ToString());
+        var vegetableStalls = GameObject.FindGameObjectsWithTag(Tags.VegetableStall.ToString());
+        var hangers = GameObject.FindGameObjectsWithTag(Tags.Hanger.ToString());
+        var hangersLarge = GameObject.FindGameObjectsWithTag(Tags.HangerLarge.ToString());
+        var shelfs = GameObject.FindGameObjectsWithTag(Tags.Shelf.ToString());
+        var shelfsLarge = GameObject.FindGameObjectsWithTag(Tags.ShelfLarge.ToString());
+        var refrigerators = GameObject.FindGameObjectsWithTag(Tags.Refrigerator.ToString());
+        foreach (var vegetableStall in vegetableStalls)
+        {
+            foreach (var x in new float[] {2.175f, 0.725f, -2.175f, -0.725f})
+            {
+                var itemNumber = random.Next(VegetableStallGroups.Length);
+                GameObject item = Instantiate(VegetableStallGroups[itemNumber]);
+                item.transform.parent = vegetableStall.transform;
+                item.transform.localPosition = new Vector3(x, -0.5f, 0.6f);
+                item.transform.localRotation = new Quaternion(0,0,0,0);
+            }
+        }
+        foreach (var shelf in GameObject.FindGameObjectsWithTag("Freezer"))
         {
             for (var i = 0; i < 41; i++)
             {

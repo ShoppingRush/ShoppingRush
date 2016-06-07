@@ -5,8 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Player
-  - Shelf
   - Item
+  - Freezer
+  - Hanger
+  - HangerLarge
+  - Refrigerator
+  - VegetableStall
+  - Shelf
+  - ShelfLarge
   layers:
   - Default
   - TransparentFX
