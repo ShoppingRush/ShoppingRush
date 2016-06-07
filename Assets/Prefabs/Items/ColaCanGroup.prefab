@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3311678}
   - 23: {fileID: 2392900}
   - 114: {fileID: 11430870}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_002
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3304140}
   - 23: {fileID: 2304736}
   - 114: {fileID: 11419164}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_012
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -47,7 +47,7 @@ GameObject:
   - 33: {fileID: 3370256}
   - 23: {fileID: 2337640}
   - 114: {fileID: 11485304}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_007
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - 33: {fileID: 3357238}
   - 23: {fileID: 2351442}
   - 114: {fileID: 11476624}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_010
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -83,7 +83,7 @@ GameObject:
   - 33: {fileID: 3320686}
   - 23: {fileID: 2324246}
   - 114: {fileID: 11419502}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_013
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -101,7 +101,7 @@ GameObject:
   - 33: {fileID: 3389166}
   - 23: {fileID: 2348998}
   - 114: {fileID: 11441940}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_009
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -119,7 +119,7 @@ GameObject:
   - 33: {fileID: 3352258}
   - 23: {fileID: 2391778}
   - 114: {fileID: 11424452}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_006
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -137,7 +137,7 @@ GameObject:
   - 33: {fileID: 3396830}
   - 23: {fileID: 2354986}
   - 114: {fileID: 11446450}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_003
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -155,7 +155,7 @@ GameObject:
   - 33: {fileID: 3303598}
   - 23: {fileID: 2384362}
   - 114: {fileID: 11472922}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_017
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - 33: {fileID: 3357178}
   - 23: {fileID: 2390510}
   - 114: {fileID: 11490316}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_000
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - 33: {fileID: 3341940}
   - 23: {fileID: 2331922}
   - 114: {fileID: 11451968}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_008
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -226,7 +226,7 @@ GameObject:
   - 33: {fileID: 3389240}
   - 23: {fileID: 2330110}
   - 114: {fileID: 11446556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_004
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - 33: {fileID: 3310672}
   - 23: {fileID: 2394660}
   - 114: {fileID: 11437972}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_001
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   - 33: {fileID: 3322840}
   - 23: {fileID: 2326186}
   - 114: {fileID: 11456338}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_016
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - 33: {fileID: 3361718}
   - 23: {fileID: 2386430}
   - 114: {fileID: 11471622}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_005
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -298,7 +298,7 @@ GameObject:
   - 33: {fileID: 3309386}
   - 23: {fileID: 2335598}
   - 114: {fileID: 11439556}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_011
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -316,7 +316,7 @@ GameObject:
   - 33: {fileID: 3311176}
   - 23: {fileID: 2347404}
   - 114: {fileID: 11471634}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_015
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ GameObject:
   - 33: {fileID: 3362860}
   - 23: {fileID: 2365688}
   - 114: {fileID: 11485670}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: ColaCan_014
   m_TagString: Item
   m_Icon: {fileID: 0}

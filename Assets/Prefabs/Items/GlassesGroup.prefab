@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3369940}
   - 23: {fileID: 2378874}
   - 114: {fileID: 11464522}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Glasses_002
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3350866}
   - 23: {fileID: 2303310}
   - 114: {fileID: 11499982}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Glasses
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -46,7 +46,7 @@ GameObject:
   - 4: {fileID: 495130}
   - 33: {fileID: 3327340}
   - 23: {fileID: 2334292}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lens__002
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,7 +80,7 @@ GameObject:
   - 4: {fileID: 475358}
   - 33: {fileID: 3309240}
   - 23: {fileID: 2353936}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lens__001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,7 +98,7 @@ GameObject:
   - 33: {fileID: 3322074}
   - 23: {fileID: 2376784}
   - 114: {fileID: 11498150}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Glasses_001
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -115,7 +115,7 @@ GameObject:
   - 4: {fileID: 491350}
   - 33: {fileID: 3333608}
   - 23: {fileID: 2367906}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lens_
   m_TagString: Untagged
   m_Icon: {fileID: 0}

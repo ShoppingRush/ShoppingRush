@@ -11,7 +11,7 @@ GameObject:
   - 33: {fileID: 3380874}
   - 23: {fileID: 2343786}
   - 114: {fileID: 11489894}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame_001
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ GameObject:
   - 33: {fileID: 3382492}
   - 23: {fileID: 2391960}
   - 114: {fileID: 11493146}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame_002
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - 33: {fileID: 3376832}
   - 23: {fileID: 2329938}
   - 114: {fileID: 11453768}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame_005
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ GameObject:
   - 33: {fileID: 3391254}
   - 23: {fileID: 2380312}
   - 114: {fileID: 11427160}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame_007
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -100,7 +100,7 @@ GameObject:
   - 33: {fileID: 3316824}
   - 23: {fileID: 2338172}
   - 114: {fileID: 11406256}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   - 33: {fileID: 3300694}
   - 23: {fileID: 2325946}
   - 114: {fileID: 11419302}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame_004
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - 33: {fileID: 3303740}
   - 23: {fileID: 2307870}
   - 114: {fileID: 11451104}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame_006
   m_TagString: Item
   m_Icon: {fileID: 0}
@@ -154,7 +154,7 @@ GameObject:
   - 33: {fileID: 3357004}
   - 23: {fileID: 2387810}
   - 114: {fileID: 11490526}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PictureFrame_003
   m_TagString: Item
   m_Icon: {fileID: 0}

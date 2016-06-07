@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Assets.Scripts;
@@ -13,24 +14,31 @@ public class InitializeMap : MonoBehaviour
 
     public GameObject[] VegetableStallGroups;
 
+    public ShopItemList ShopItemList;
 
 
     // Use this for initialization
     void Start()
     {
+        var random = new System.Random();
+        var shopItemDatas = new List<ShopItemData>();
+        foreach (var shelfGroup in ShelfGroups)
+        {
+            shopItemDatas.Add(shelfGroup.GetComponentInChildren<ShopItemData>());
+        }
+        foreach (var shelfGroup in VegetableStallGroups)
+        {
+            shopItemDatas.Add(shelfGroup.GetComponentInChildren<ShopItemData>());
+        }
+
+        ShopItemList.ShopItemToCollect = shopItemDatas.Where(d => random.NextDouble() < 0.3).ToDictionary(data => data, data => random.Next(10));
+        
+
         SelectLevelMenu.CurrentLevel = SceneManager.GetActiveScene().name;
 
-        //var prefabs = Directory.GetFiles("Assets\\Prefabs\\Items", "*.prefab", SearchOption.AllDirectories);
-
-
-        var random = new System.Random();
-        var freezers = GameObject.FindGameObjectsWithTag(Tags.Freezer.ToString());
         var vegetableStalls = GameObject.FindGameObjectsWithTag(Tags.VegetableStall.ToString());
-        var hangers = GameObject.FindGameObjectsWithTag(Tags.Hanger.ToString());
-        var hangersLarge = GameObject.FindGameObjectsWithTag(Tags.HangerLarge.ToString());
         var shelfs = GameObject.FindGameObjectsWithTag(Tags.Shelf.ToString());
         var shelfsLarge = GameObject.FindGameObjectsWithTag(Tags.ShelfLarge.ToString());
-        var refrigerators = GameObject.FindGameObjectsWithTag(Tags.Refrigerator.ToString());
         foreach (var vegetableStall in vegetableStalls)
         {
             foreach (var x in new[] {2.175f, 0.725f, -2.175f, -0.725f})
