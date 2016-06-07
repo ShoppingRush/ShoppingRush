@@ -8,20 +8,22 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class InitializeCrowd : MonoBehaviour
 {
-    public GameObject PersonPrefab;
+    public GameObject[] PeoplePrefab;
 
-    private List<GameObject> _people;
+    public int PersonCount;
+
 
     // Use this for initialization
     void Start ()
     {
-        _people = new List<GameObject>();
-        for (int i = 0; i <100; i++)
+        var random = new System.Random();
+        for (int i = 0; i < PersonCount; i++)
         {
-            GameObject person = Instantiate(PersonPrefab);
+            var personNumber = random.Next(PeoplePrefab.Length);
+            GameObject person = Instantiate(PeoplePrefab[personNumber]);
             var position  = Patrol.RandomNavSphere(new Vector3(1, 0.5f, 17.5f), 50, 1);
             person.transform.position = position;
-            _people.Add(person);
+            person.transform.rotation = Quaternion.AngleAxis(random.Next(360), Vector3.up);
         }
     }
 }
