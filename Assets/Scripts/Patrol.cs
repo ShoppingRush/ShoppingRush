@@ -38,15 +38,25 @@ namespace Assets.Scripts
 
         // Update is called once per frame
         void Update()
-        {/*
+        {
             var currentLevel = GetLevel();
             _timer += Time.deltaTime;
 
             if ((_timer >= PatrolTimer || _agent.remainingDistance < 0.5) && currentLevel != FloorLevel.Stair)
             {
                 var items = new List<GameObject>(GameObject.FindGameObjectsWithTag("Item")); // TODO improve this
-                var newPos = RandomNavSphere(items[Random.Range(0, items.Count - 1)].transform.position, PatrolRadius, NavMesh.AllAreas);
-                _agent.SetDestination(newPos);
+                if (items.Count > 0)
+                {
+                    var newPos = RandomNavSphere(items[Random.Range(0, items.Count - 1)].transform.position,
+                        PatrolRadius, NavMesh.AllAreas);
+                    _agent.SetDestination(newPos);
+                }
+                else
+                {
+                    var newPos = RandomNavSphere(Vector3.zero, 
+                        PatrolRadius, NavMesh.AllAreas);
+                    _agent.SetDestination(newPos);
+                }
                 _timer = 0;
             }
 
@@ -68,7 +78,7 @@ namespace Assets.Scripts
                 }
             }
             _latestLevel = currentLevel;
-            */
+            
         }
 
         public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
