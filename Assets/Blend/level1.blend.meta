@@ -274,6 +274,50 @@ ModelImporter:
     4300100: Shelf_022
     4300102: Shelf_026
     4300104: Shelf_025
+    6400000: floor
+    6400002: floorTill
+    6400004: //RootNode
+    6400006: level1
+    6400008: roof
+    6400010: Shelf_000
+    6400012: Shelf_001
+    6400014: Shelf_002
+    6400016: Shelf_003
+    6400018: Shelf_004
+    6400020: Shelf_005
+    6400022: Shelf_006
+    6400024: Shelf_007
+    6400026: Shelf_008
+    6400028: Shelf_009
+    6400030: Shelf_010
+    6400032: Shelf_011
+    6400034: Shelf_012
+    6400036: Shelf_013
+    6400038: Shelf_014
+    6400040: Shelf_015
+    6400042: Shelf_016
+    6400044: Shelf_017
+    6400046: Shelf_018
+    6400048: Shelf_019
+    6400050: Shelf_020
+    6400052: Shelf_021
+    6400054: Shelf_022
+    6400056: Shelf_023
+    6400058: Shelf_024
+    6400060: Shelf_025
+    6400062: Shelf_026
+    6400064: Shelf_027
+    6400066: stairDown
+    6400068: stairUp
+    6400070: Till
+    6400072: till
+    6400074: till_001
+    6400076: till_002
+    6400078: till_003
+    6400080: till_004
+    6400082: till_005
+    6400084: till_006
+    6400086: till_007
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -302,13 +346,13 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
     optimizeMeshForGPU: 1
-    keepQuads: 0
+    keepQuads: 1
     weldVertices: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001

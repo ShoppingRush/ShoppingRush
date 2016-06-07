@@ -346,6 +346,9 @@ ModelImporter:
     100676: VegetableStall_007
     100678: VegetableStallGroup
     100680: VegetableStall_000
+    100682: Shop
+    100684: ShelfLarge_000
+    100686: Column_000
     400000: AntiTheftGate
     400002: AntiTheftGate_001
     400004: AntiTheftGate_002
@@ -687,6 +690,9 @@ ModelImporter:
     400676: VegetableStall_007
     400678: VegetableStallGroup
     400680: VegetableStall_000
+    400682: Shop
+    400684: ShelfLarge_000
+    400686: Column_000
     2300000: AntiTheftGate
     2300002: AntiTheftGate_001
     2300004: AntiTheftGate_002
@@ -1004,6 +1010,9 @@ ModelImporter:
     2300628: VegetableStall_006
     2300630: VegetableStall_007
     2300632: VegetableStall_000
+    2300634: Shop
+    2300636: ShelfLarge_000
+    2300638: Column_000
     3300000: AntiTheftGate
     3300002: AntiTheftGate_001
     3300004: AntiTheftGate_002
@@ -1321,6 +1330,9 @@ ModelImporter:
     3300628: VegetableStall_006
     3300630: VegetableStall_007
     3300632: VegetableStall_000
+    3300634: Shop
+    3300636: ShelfLarge_000
+    3300638: Column_000
     4300000: Shop
     4300002: Fence
     4300004: Plane_004
@@ -1638,6 +1650,8 @@ ModelImporter:
     4300628: Plane
     4300630: Cube
     4300632: VegetableStall_000
+    4300634: ShelfLarge_000
+    4300636: Column_000
     6400000: AntiTheftGate
     6400002: AntiTheftGate_001
     6400004: AntiTheftGate_002
@@ -1955,6 +1969,9 @@ ModelImporter:
     6400628: VegetableStall_006
     6400630: VegetableStall_007
     6400632: VegetableStall_000
+    6400634: Shop
+    6400636: ShelfLarge_000
+    6400638: Column_000
     7400000: Default Take
     9500000: //RootNode
   materials:
@@ -2000,7 +2017,7 @@ ModelImporter:
     normalSmoothAngle: 60
     normalImportMode: 0
     tangentImportMode: 3
-  importAnimation: 1
+  importAnimation: 0
   copyAvatar: 0
   humanDescription:
     human: []
@@ -2015,7 +2032,7 @@ ModelImporter:
     rootMotionBoneName: 
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
