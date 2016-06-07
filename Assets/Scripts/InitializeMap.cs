@@ -9,7 +9,7 @@ public class InitializeMap : MonoBehaviour
 {
     public GameObject Map;
 
-    public GameObject[] Items;
+    public GameObject[] ShelfGroups;
 
     public GameObject[] VegetableStallGroups;
 
@@ -33,7 +33,7 @@ public class InitializeMap : MonoBehaviour
         var refrigerators = GameObject.FindGameObjectsWithTag(Tags.Refrigerator.ToString());
         foreach (var vegetableStall in vegetableStalls)
         {
-            foreach (var x in new float[] {2.175f, 0.725f, -2.175f, -0.725f})
+            foreach (var x in new[] {2.175f, 0.725f, -2.175f, -0.725f})
             {
                 var itemNumber = random.Next(VegetableStallGroups.Length);
                 GameObject item = Instantiate(VegetableStallGroups[itemNumber]);
@@ -42,50 +42,35 @@ public class InitializeMap : MonoBehaviour
                 item.transform.localRotation = new Quaternion(0,0,0,0);
             }
         }
-        foreach (var shelf in GameObject.FindGameObjectsWithTag("Freezer"))
+
+        foreach (var shelf in shelfs)
         {
-            for (var i = 0; i < 41; i++)
+            foreach (var x in new[] { 2.175f, 0.725f, -2.175f, -0.725f })
             {
-                for (var z = 0; z < 4; z++)
+                foreach (var z in new[] { 0.6875f, 1.225f, 1.7625f, 0.15f })
                 {
-                    for (var side = -1; side < 2; side+=2)
-                    {
-                        var itemNumber = random.Next(Items.Length);
-                        GameObject item = Instantiate(Items[itemNumber]);
-                        item.transform.parent = shelf.transform;
-
-                        // 15,67 x 1,75
-                        // z = 0,15
-                        // z = 0.675
-                        // z = 1.2
-                        // z = 1.725
-
-                        // pierwszy  0,075875 + (0.25 + 0.14175) * 19 + 0.25/2 =  7.644125
-                        // ostatni - 0,075875 - (0.25 + 0.14175) * 19 - 0.25/2 = -7.644125
-
-                        // f(0)  = -7.644125
-                        // f(40) =  7.644125
-
-                        // y = ax + b
-                        // b = -7.644125
-                        // y = ax - 7.644125
-                        // a =  0.382206
-
-                        item.transform.localPosition = new Vector3(0.382206f*i - 7.644125f, (2f - 0.25f/2 - 0.1f) * -side,
-                            0.15f + 0.525f*z + 0.35f/2);
-                    }
+                    var itemNumber = random.Next(ShelfGroups.Length);
+                    GameObject item = Instantiate(ShelfGroups[itemNumber]);
+                    item.transform.parent = shelf.transform;
+                    item.transform.localPosition = new Vector3(x, -0.5f, z);
+                    item.transform.localRotation = new Quaternion(0, 0, 0, 0);
                 }
             }
         }
-    }
+        foreach (var shelf in shelfsLarge)
+        {
+            foreach (var x in new[] { -3, -1.5f, 0, 1.5f, 3 })
+            {
+                foreach (var z in new[] { 0.6875f, 1.225f, 1.7625f, 0.15f })
+                {
+                    var itemNumber = random.Next(ShelfGroups.Length);
+                    GameObject item = Instantiate(ShelfGroups[itemNumber]);
+                    item.transform.parent = shelf.transform;
+                    item.transform.localPosition = new Vector3(x, -0.5f, z);
+                    item.transform.localRotation = new Quaternion(0, 0, 0, 0);
+                }
+            }
+        }
 
-    private static Color ParseColor(string col) {
-         //Takes strings formatted with numbers and no spaces before or after the commas:
-         var strings = col.Split(',');
-         Color color = new Color();
-         for (var i = 0; i < 4; i++) {
-            color[i] = float.Parse(strings[i]);
-         }
-         return color;
-     }
+    }
 }

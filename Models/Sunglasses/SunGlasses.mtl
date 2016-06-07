@@ -1,0 +1,20 @@
+# Blender MTL File: 'SunGlasses.blend'
+# Material Count: 2
+
+newmtl Frame_Plastic
+Ns 117.647059
+Ka 0.000000 0.000000 0.000000
+Kd 0.000000 0.000000 0.000000
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 1.000000
+illum 2
+
+newmtl Lens_Glass
+Ns 92.156863
+Ka 0.000000 0.000000 0.000000
+Kd 0.012217 0.012217 0.012217
+Ks 1.000000 1.000000 1.000000
+Ni 1.000000
+d 0.217172
+illum 2
