@@ -25,6 +25,7 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 429610}
+  - 114: {fileID: 11482956}
   m_Layer: 0
   m_Name: McLaren
   m_TagString: Untagged
@@ -90,6 +91,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100420}
   m_Mesh: {fileID: 4300000, guid: c076a9a683918d84b9aa8dbd61bf9600, type: 3}
+--- !u!114 &11482956
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 187078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bcabb1cd596bfb4c99b6f5d34099e2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShopItemData:
+    ItemName: McLaren
+    ItemId: 4
+    Color: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

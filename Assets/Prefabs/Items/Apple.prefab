@@ -257,8 +257,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShopItemData:
-    ItemName: 
-    ItemId: 0
+    ItemName: Apple
+    ItemId: 1
     Color: 
 --- !u!1001 &100100000
 Prefab:

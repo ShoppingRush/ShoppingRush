@@ -607,8 +607,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShopItemData:
-    ItemName: 
-    ItemId: 0
+    ItemName: Cactus
+    ItemId: 2
     Color: 
 --- !u!1001 &100100000
 Prefab:
