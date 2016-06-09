@@ -24,14 +24,14 @@ public class InitializeMap : MonoBehaviour
         var shopItemDatas = new List<ShopItemData>();
         foreach (var shelfGroup in ShelfGroups)
         {
-            shopItemDatas.Add(shelfGroup.GetComponentInChildren<ShopItemData>());
+            shopItemDatas.Add(shelfGroup.GetComponentInChildren<ShopItem>().ShopItemData);
         }
         foreach (var shelfGroup in VegetableStallGroups)
         {
-            shopItemDatas.Add(shelfGroup.GetComponentInChildren<ShopItemData>());
+            shopItemDatas.Add(shelfGroup.GetComponentInChildren<ShopItem>().ShopItemData);
         }
 
-        ShopItemList.ShopItemToCollect = shopItemDatas.Where(d => random.NextDouble() < 0.3).ToDictionary(data => data, data => random.Next(10));
+        ShopItemList.ShopItemToCollect = shopItemDatas.Where(d => random.NextDouble() < 0.3).ToDictionary(data => data, data => random.Next(10) + 1);
         
 
         SelectLevelMenu.CurrentLevel = SceneManager.GetActiveScene().name;

@@ -34,18 +34,6 @@ namespace Assets.Scripts
         // Use this for initialization
         void Start()
         {
-            var items = JsonUtility.FromJson<Items>(System.IO.File.ReadAllText("Assets/Config/items.json")).ItemsData;
-            _shopItemToCollect = new Dictionary<ShopItemData, int>()
-            {
-                {items[0], 1 },
-                {items[1], 1 }//,
-                //{items[2], 1 },
-                //{items[3], 1 },
-                //{items[4], 1 },
-                //{items[5], 1 },
-            };
-
-
             _inventory = GetComponent<Inventory>();
             ShopItemListPanel.rectTransform.sizeDelta = new Vector2(0, 0);
             RedrawUi();
@@ -54,7 +42,7 @@ namespace Assets.Scripts
         public void RedrawUi()
         {
             
-            if (ShopItemToCollect != null && ShopItemToCollect.Count > 0)
+            if (ShopItemToCollect != null && ShopItemToCollect.Count > 0 && _inventory != null)
             {
                 foreach (Transform child in ShopItemListPanel.transform)
                 {

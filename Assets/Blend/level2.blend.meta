@@ -349,6 +349,9 @@ ModelImporter:
     100682: Shop
     100684: ShelfLarge_000
     100686: Column_000
+    100688: AntiTheftGate_000
+    100690: Cube_000
+    100692: Plane_000
     400000: AntiTheftGate
     400002: AntiTheftGate_001
     400004: AntiTheftGate_002
@@ -693,6 +696,9 @@ ModelImporter:
     400682: Shop
     400684: ShelfLarge_000
     400686: Column_000
+    400688: AntiTheftGate_000
+    400690: Cube_000
+    400692: Plane_000
     2300000: AntiTheftGate
     2300002: AntiTheftGate_001
     2300004: AntiTheftGate_002
@@ -1013,6 +1019,9 @@ ModelImporter:
     2300634: Shop
     2300636: ShelfLarge_000
     2300638: Column_000
+    2300640: AntiTheftGate_000
+    2300642: Cube_000
+    2300644: Plane_000
     3300000: AntiTheftGate
     3300002: AntiTheftGate_001
     3300004: AntiTheftGate_002
@@ -1333,6 +1342,9 @@ ModelImporter:
     3300634: Shop
     3300636: ShelfLarge_000
     3300638: Column_000
+    3300640: AntiTheftGate_000
+    3300642: Cube_000
+    3300644: Plane_000
     4300000: Shop
     4300002: Fence
     4300004: Plane_004
@@ -1652,6 +1664,9 @@ ModelImporter:
     4300632: VegetableStall_000
     4300634: ShelfLarge_000
     4300636: Column_000
+    4300638: AntiTheftGate_000
+    4300640: Cube_000
+    4300642: Plane_000
     6400000: AntiTheftGate
     6400002: AntiTheftGate_001
     6400004: AntiTheftGate_002
@@ -1972,6 +1987,9 @@ ModelImporter:
     6400634: Shop
     6400636: ShelfLarge_000
     6400638: Column_000
+    6400640: AntiTheftGate_000
+    6400642: Cube_000
+    6400644: Plane_000
     7400000: Default Take
     9500000: //RootNode
   materials:

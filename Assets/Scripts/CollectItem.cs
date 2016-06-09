@@ -25,11 +25,12 @@ namespace Assets.Scripts
         {
             RaycastHit hitInfo;
             var ray = new Ray(Camera.transform.position, Camera.transform.forward);
-            if (Physics.Raycast(ray, out hitInfo, 5f, 1 << LayerMask.NameToLayer("Item")))
+            if (Physics.Raycast(ray, out hitInfo, 10f, 1 << LayerMask.NameToLayer("Item")))
             {
                 if (hitInfo.collider.tag == "Item")
                 {
                     var item = hitInfo.collider.gameObject;
+                    Debug.Log(item);
                 //    if (item != _lastItem)
                   //  {
                         //_lastItem.GetComponent<MeshRenderer>().material = _lastMaterial;
